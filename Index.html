@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Reading-Tracker</h1> 
+    <nav class="titleBar">
+        <img id="menuIcon" src="assets/icons/Menu.svg" alt="Menu Icon" />
+        <h1>Reading-Tracker</h1>
+    </nav>
     <nav class="sideBar">
-        <!-- Sidebar navigation content -->
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <vr> 
-      <main class="main-content">
+        <section class="sideBar-Menu">
+            <div class="sideBar-Menus">
+                <img id="homeIcon" src="assets/icons/Home.svg" alt="Home Icon" />
+                Home
+            </div>
+            <div class="sideBar-Menus">
+                <img id="statsIcon" src="assets/icons/Stats.svg" alt="Stats Icon" />
+                Stats
+            </div>
+            <div class="sideBar-Menus">
+                <img id="synIcon" src="assets/icons/Syn.svg" alt="Syntopical Reading Icon" />
+                Syntopical Reading
+            </div>
+            <div class="sideBar-Menus">
+                <img id="preferencesIcon" src="assets/icons/Preference.svg" alt="Reading Preferences Icon" />
+                Reading Preferences
+            </div>
+        </section>
+    </nav>
+    
+    <main class="main-content">
         <section>
         </section>
-      </main>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

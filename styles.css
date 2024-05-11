@@ -1,34 +1,76 @@
 @font-face {
     font-family: 'BebasNeue';
-    src: url('../fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype');
     /* Add additional font formats and variations as needed */
 }
 @font-face {
     font-family: 'Anglestein';
-    src: url('../fonts/Anglestein/Anglestein.ttf')format('truetype');
+    src: url('../assets/fonts/Anglestein/Anglestein.ttf')format('truetype');
 }
 
 @font-face {
     font-family: 'Risque-Regular';
-    src: url('../fonts/Risque/Risque-Regular.ttf')format('truetype');
+    src: url('../assets/fonts/Risque/Risque-Regular.ttf')format('truetype');
 }
 
-body {
-    background-color: black;
-    color: rgb(255, 255, 255);
+.titleBar {
+    display: flex;
+    border-bottom: solid 1px #5c5555;
+}
+
+#toggleButton {
+    display: flex;
+    align-items: center;
 }
 
 h1 {
-    font-family: 'Risque-Regular';
-    letter-spacing: 0.2em; /* Increase the letter spacing */
+    color: #FFFFFF;
+    font-family: 'Risque-Regular', cursive;
+    letter-spacing: 0.1em; 
+    margin: 0px;
+    padding: 10px;
+
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
 
 .sideBar {
+    border-right: 2px solid white;
+    width: 13vw;
+    height: 100vh;
+    transition: width 0.3s ease-in-out, border-right 0.3s ease-in-out;
+}
+
+.sideBar.collapsed {
+    width: 0;
+    overflow: hidden;
+    border-right: none; /* This line is added */
+}
+
+.sideBar-Menu {
     display: grid;
-    position: fixed;
-    left: 0px;
-    width: 250px;
-    height: 100%;
-    border-right: 1px solid whitesmoke;
+    grid-gap:10px;
+}
+
+.sideBar-Menus {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #FFFFFF;
+    box-shadow: 1px solid #FFFFFF;
+    font-family: "Roboto", "Noto", sans-serif;
+    gap: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+
+}
+
+.sideBar-Menus object {
+
 }
 
